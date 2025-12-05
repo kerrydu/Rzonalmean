@@ -1,0 +1,5 @@
+conda create -n geozones -y python=3.11
+conda activate geozones
+conda install -y -c conda-forge rasterio geopandas rasterstats pandas numpy
+
+python "zonal_mean_hunan.py" "DMSP-like2020.tif" "hunan.shp"
